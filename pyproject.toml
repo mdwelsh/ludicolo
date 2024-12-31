@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ludicolo"
+version = "0.1.0"
+description = ""
+authors = ["Matt Welsh <matt.welsh@trilliumacademy.org>"]
+packages = [{include = "ludicolo"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4"
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
